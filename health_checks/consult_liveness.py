@@ -8,10 +8,11 @@ DEPLOYMENT_URL = os.getenv("DEPLOYMENT_URL")
 
 def liveness() -> dict | None:
 
-    url = f"{DEPLOYMENT_URL}/health/readiness"
+    url = f"{DEPLOYMENT_URL}/health/liveness"
 
     response = requests.get(url, timeout=5)
     response.raise_for_status()
     return response.json()
 
-liveness()
+response = liveness()
+print(response)

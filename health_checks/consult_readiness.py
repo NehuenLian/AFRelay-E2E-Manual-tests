@@ -14,4 +14,5 @@ def readiness() -> dict | None:
     response.raise_for_status()
     return response.json()
 
-readiness()
+response = readiness()
+print(response)
