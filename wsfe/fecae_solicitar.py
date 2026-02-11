@@ -3,7 +3,7 @@ import os
 import requests
 from dotenv import load_dotenv
 
-from common import get_date_today
+from utils import get_date_today
 
 load_dotenv()
 DEPLOYMENT_URL = os.getenv("DEPLOYMENT_URL")
