@@ -1,4 +1,4 @@
-# AFRelay E2E Manual Tests
+# Tests E2E manuales para AFRelay
 
 Scripts de prueba end-to-end (E2E) para validar los endpoints de la API **AFRelay** (WSFE).
 
@@ -26,12 +26,12 @@ Este repositorio contiene un conjunto de scripts que permiten testear manualment
 python wsfe/execute_all.py
 ```
 
-# Verificar liveness
+### Verificar liveness
 ```bash
 python health_checks/consult_liveness.py
 ```
 
-# Verificar readiness
+### Verificar readiness
 ```bash
 python health_checks/consult_readiness.py
 ```
