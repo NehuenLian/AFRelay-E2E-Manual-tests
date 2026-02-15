@@ -1,3 +1,4 @@
+from colorama import Fore, Style, init
 from fe_param_get_tipos_tributos import fe_param_get_tipos_tributos
 from fe_param_get_tipos_paises import fe_param_get_tipos_paises
 from fe_param_get_tipos_opcional import fe_param_get_tipos_opcional
@@ -14,135 +15,78 @@ from fe_comp_ultimo_autorizado import fe_comp_ultimo_autorizado
 from fe_comp_totX_request import fecomp_totx_request
 from fe_comp_consultar import fe_comp_consultar
 from fecae_solicitar import fecae_solicitar
-from fecae_reg_informativo import fecae_reg_informativo
+from fecaea_reg_informativo import fecae_reg_informativo
 from fecaea_solicitar import fecaea_solicitar
 from fecaea_sin_movimiento_informar import fecaea_sin_movimiento_informar
 from fecaea_sin_movimiento_consultar import fecaea_sin_movimiento_consultar
 from fecaea_consultar import fecaea_consultar
 
+init(autoreset=True)
+
+def print_result(name, status):
+    color = Fore.GREEN if status == "success" else Fore.RED
+    print(f"{color}{name}={status}")
+
 # Execute all functions one by one
 response = fecae_solicitar()
-if response["status"] == "success":
-    print("FECAESolicitar=success")
-else:
-    print("FECAESolicitar=error")
+print_result("FECAESolicitar", response["status"])
 
 response = fecomp_totx_request()
-if response["status"] == "success":
-    print("FECompTotXRequest=success")
-else:
-    print("FECompTotXRequest=error")
+print_result("FECompTotXRequest", response["status"])
 
 response = fe_comp_ultimo_autorizado()
-if response["status"] == "success":
-    print("FECompUltimoAutorizado=success")
-else:
-    print("FECompUltimoAutorizado=error")
+print_result("FECompUltimoAutorizado", response["status"])
 
 response = fe_comp_consultar()
-if response["status"] == "success":
-    print("FECompConsultar=success")
-else:
-    print("FECompConsultar=error")
+print_result("FECompConsultar", response["status"])
 
 response = fecae_reg_informativo()
-if response["status"] == "success":
-    print("FECAEARegInformativo=success")
-else:
-    print("FECAEARegInformativo=error")
+print_result("FECAEARegInformativo", response["status"])
 
 response = fecaea_solicitar()
-if response["status"] == "success":
-    print("FECAEASolicitar=success")
-else:
-    print("FECAEASolicitar=error")
+print_result("FECAEASolicitar", response["status"])
 
 response = fecaea_sin_movimiento_consultar()
-if response["status"] == "success":
-    print("FECAEASinMovimientoConsultar=success")
-else:
-    print("FECAEASinMovimientoConsultar=error")
+print_result("FECAEASinMovimientoConsultar", response["status"])
 
 response = fecaea_sin_movimiento_informar()
-if response["status"] == "success":
-    print("FECAEASinMovimientoInformar=success")
-else:
-    print("FECAEASinMovimientoInformar=error")
+print_result("FECAEASinMovimientoInformar", response["status"])
 
 response = fecaea_consultar()
-if response["status"] == "success":
-    print("FECAEAConsultar=success")
-else:
-    print("FECAEAConsultar=error")
+print_result("FECAEAConsultar", response["status"])
 
 response = fe_param_get_cotization()
-if response["status"] == "success":
-    print("FEParamGetCotizacion=success")
-else:
-    print("FEParamGetCotizacion=error")
+print_result("FEParamGetCotizacion", response["status"])
 
 response = fe_param_get_tipos_tributos()
-if response["status"] == "success":
-    print("FEParamGetTiposTributos=success")
-else:
-    print("FEParamGetTiposTributos=error")
+print_result("FEParamGetTiposTributos", response["status"])
 
 response = fe_param_get_tipos_monedas()
-if response["status"] == "success":
-    print("FEParamGetTiposMonedas=success")
-else:
-    print("FEParamGetTiposMonedas=error")
+print_result("FEParamGetTiposMonedas", response["status"])
 
 response = fe_param_get_tipos_iva()
-if response["status"] == "success":
-    print("FEParamGetTiposIva=success")
-else:
-    print("FEParamGetTiposIva=error")
+print_result("FEParamGetTiposIva", response["status"])
 
 response = fe_param_get_tipos_opcional()
-if response["status"] == "success":
-    print("FEParamGetTiposOpcional=success")
-else:
-    print("FEParamGetTiposOpcional=error")
+print_result("FEParamGetTiposOpcional", response["status"])
 
 response = fe_param_get_tipos_concepto()
-if response["status"] == "success":
-    print("FEParamGetTiposConcepto=success")
-else:
-    print("FEParamGetTiposConcepto=error")
+print_result("FEParamGetTiposConcepto", response["status"])
 
 response = fe_param_get_ptos_venta()
-if response["status"] == "success":
-    print("FEParamGetPtosVenta=success")
-else:
-    print("FEParamGetPtosVenta=error")
+print_result("FEParamGetPtosVenta", response["status"])
 
 response = fe_param_get_tipos_cbte()
-if response["status"] == "success":
-    print("FEParamGetTiposCbte=success")
-else:
-    print("FEParamGetTiposCbte=error")
+print_result("FEParamGetTiposCbte", response["status"])
 
 response = fe_param_get_condicion_iva_receptor()
-if response["status"] == "success":
-    print("FEParamGetCondicionIvaReceptor=success")
-else:
-    print("FEParamGetCondicionIvaReceptor=error")
+print_result("FEParamGetCondicionIvaReceptor", response["status"])
 
 response = fe_param_get_tipos_doc()
-if response["status"] == "success":
-    print("FEParamGetTiposDoc=success")
-else:
-    print("FEParamGetTiposDoc=error")
+print_result("FEParamGetTiposDoc", response["status"])
 
 response = fe_param_get_tipos_paises()
-if response["status"] == "success":
-    print("FEParamGetTiposPaises=success")
-else:
-    print("FEParamGetTiposPaises=error")
+print_result("FEParamGetTiposPaises", response["status"])
 
 response = fe_param_get_actividades()
-if response["status"] == "success":
-    print("FEParamGetActividades=success")
-else:
-    print("FEParamGetActividades=error")
+print_result("FEParamGetActividades", response["status"])
