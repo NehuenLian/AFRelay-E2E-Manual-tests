@@ -17,7 +17,7 @@ def fecaea_sin_movimiento_consultar():
         "Auth": {
             "Cuit": CUIT
         },
-        "CAEA": "86060007329748",
+        "CAEA": "00000000000000",
         "PtoVta": 1
     }
 

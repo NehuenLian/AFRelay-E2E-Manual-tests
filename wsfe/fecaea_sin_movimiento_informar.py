@@ -18,7 +18,7 @@ def fecaea_sin_movimiento_informar():
             "Cuit": CUIT
         },
         "PtoVta": 1,
-        "CAEA": "86060007329748"
+        "CAEA": "00000000000000",
     }
 
     headers = {"Authorization": f"Bearer {TOKEN}"}

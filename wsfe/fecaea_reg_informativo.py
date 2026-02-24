@@ -42,7 +42,7 @@ def fecae_reg_informativo():
                         "MonId": "PES",
                         "MonCotiz": 1.00,
                         "CondicionIVAReceptorId": 1,
-                        "CAEA": "12345678901234"
+                        "CAEA": "00000000000000",
                     }
                 ]
             }
