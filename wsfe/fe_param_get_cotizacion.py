@@ -16,7 +16,7 @@ def fe_param_get_cotization():
         "Auth": {
             "Cuit": CUIT
         },
-        "MonId" : "PES"
+        "MonId" : "DOL"
     }
 
     headers = {"Authorization": f"Bearer {TOKEN}"}
