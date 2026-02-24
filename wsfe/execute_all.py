@@ -24,7 +24,11 @@ from fecaea_consultar import fecaea_consultar
 init(autoreset=True)
 
 def print_result(name, status):
-    color = Fore.GREEN if status == "success" else Fore.RED
+    color = Fore.GREEN 
+    if status == "success":
+        Fore.GREEN 
+    else:
+        Fore.RED
     print(f"{color}{name}={status}")
 
 # Execute all functions one by one
