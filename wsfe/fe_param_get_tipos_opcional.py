@@ -10,7 +10,7 @@ TOKEN = os.getenv("TOKEN")
 
 def fe_param_get_tipos_opcional():
 
-    url = f"{DEPLOYMENT_URL}/wsfe/FEParamGetTiposOpcional"
+    url = f"{DEPLOYMENT_URL}/wsfev1/FEParamGetTiposOpcional"
 
     data = {
         "Auth": {

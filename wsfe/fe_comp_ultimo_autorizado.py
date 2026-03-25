@@ -10,7 +10,7 @@ TOKEN = os.getenv("TOKEN")
 
 def fe_comp_ultimo_autorizado():
 
-    url = f"{DEPLOYMENT_URL}/wsfe/FECompUltimoAutorizado"
+    url = f"{DEPLOYMENT_URL}/wsfev1/FECompUltimoAutorizado"
 
     data = {
         "Auth": {

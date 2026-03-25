@@ -10,7 +10,7 @@ TOKEN = os.getenv("TOKEN")
 
 def fe_param_get_condicion_iva_receptor():
 
-    url = f"{DEPLOYMENT_URL}/wsfe/FEParamGetCondicionIvaReceptor"
+    url = f"{DEPLOYMENT_URL}/wsfev1/FEParamGetCondicionIvaReceptor"
 
     data = {
         "Auth": {

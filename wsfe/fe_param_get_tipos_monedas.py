@@ -10,7 +10,7 @@ TOKEN = os.getenv("TOKEN")
 
 def fe_param_get_tipos_monedas():
 
-    url = f"{DEPLOYMENT_URL}/wsfe/FEParamGetTiposMonedas"
+    url = f"{DEPLOYMENT_URL}/wsfev1/FEParamGetTiposMonedas"
 
     data = {
         "Auth": {

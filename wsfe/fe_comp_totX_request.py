@@ -10,7 +10,7 @@ TOKEN = os.getenv("TOKEN")
 
 def fecomp_totx_request():
 
-    url = f"{DEPLOYMENT_URL}/wsfe/FECompTotXRequest"
+    url = f"{DEPLOYMENT_URL}/wsfev1/FECompTotXRequest"
 
     data = {
         "Auth": {

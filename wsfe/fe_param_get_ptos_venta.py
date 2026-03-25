@@ -10,7 +10,7 @@ TOKEN = os.getenv("TOKEN")
 
 def fe_param_get_ptos_venta():
 
-    url = f"{DEPLOYMENT_URL}/wsfe/FEParamGetPtosVenta"
+    url = f"{DEPLOYMENT_URL}/wsfev1/FEParamGetPtosVenta"
 
     data = {
         "Auth": {

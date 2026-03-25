@@ -10,7 +10,7 @@ TOKEN = os.getenv("TOKEN")
 
 def fe_param_get_cotization():
 
-    url = f"{DEPLOYMENT_URL}/wsfe/FEParamGetCotizacion"
+    url = f"{DEPLOYMENT_URL}/wsfev1/FEParamGetCotizacion"
 
     data = {
         "Auth": {

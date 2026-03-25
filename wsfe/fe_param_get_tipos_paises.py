@@ -10,7 +10,7 @@ TOKEN = os.getenv("TOKEN")
 
 def fe_param_get_tipos_paises():
 
-    url = f"{DEPLOYMENT_URL}/wsfe/FEParamGetTiposPaises"
+    url = f"{DEPLOYMENT_URL}/wsfev1/FEParamGetTiposPaises"
 
     data = {
         "Auth": {

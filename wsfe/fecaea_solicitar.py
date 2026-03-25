@@ -11,14 +11,14 @@ TOKEN = os.getenv("TOKEN")
 
 def fecaea_solicitar():
 
-    url = f"{DEPLOYMENT_URL}/wsfe/FECAEASolicitar"
+    url = f"{DEPLOYMENT_URL}/wsfev1/FECAEASolicitar"
 
     data = {
         "Auth": {
             "Cuit": CUIT
         },
-        "Periodo": 202602,
-        "Orden": 1
+        "Periodo": 202603,
+        "Orden": 2
     }
 
     headers = {"Authorization": f"Bearer {TOKEN}"}

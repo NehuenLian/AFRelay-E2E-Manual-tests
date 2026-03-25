@@ -10,13 +10,13 @@ TOKEN = os.getenv("TOKEN")
 
 def fecaea_consultar():
 
-    url = f"{DEPLOYMENT_URL}/wsfe/FECAEAConsultar"
+    url = f"{DEPLOYMENT_URL}/wsfev1/FECAEAConsultar"
 
     data = {
         "Auth": {
             "Cuit": CUIT
         },
-        "Periodo": 202602,
+        "Periodo": 202603,
         "Orden": 1
     }
 

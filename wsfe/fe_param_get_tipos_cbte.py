@@ -10,7 +10,7 @@ TOKEN = os.getenv("TOKEN")
 
 def fe_param_get_tipos_cbte():
 
-    url = f"{DEPLOYMENT_URL}/wsfe/FEParamGetTiposCbte"
+    url = f"{DEPLOYMENT_URL}/wsfev1/FEParamGetTiposCbte"
 
     data = {
         "Auth": {

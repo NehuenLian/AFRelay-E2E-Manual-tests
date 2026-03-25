@@ -13,7 +13,7 @@ TOKEN = os.getenv("TOKEN")
 
 def fecae_solicitar():
 
-    url = f"{DEPLOYMENT_URL}/wsfe/FECAESolicitar"
+    url = f"{DEPLOYMENT_URL}/wsfev1/FECAESolicitar"
 
     payload = {
         "Auth": {

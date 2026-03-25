@@ -11,7 +11,7 @@ TOKEN = os.getenv("TOKEN")
 
 def fecaea_sin_movimiento_consultar():
 
-    url = f"{DEPLOYMENT_URL}/wsfe/FECAEASinMovimientoConsultar"
+    url = f"{DEPLOYMENT_URL}/wsfev1/FECAEASinMovimientoConsultar"
 
     data = {
         "Auth": {

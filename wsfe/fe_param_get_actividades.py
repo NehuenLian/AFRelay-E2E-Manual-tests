@@ -10,7 +10,7 @@ TOKEN = os.getenv("TOKEN")
 
 def fe_param_get_actividades():
 
-    url = f"{DEPLOYMENT_URL}/wsfe/FEParamGetActividades"
+    url = f"{DEPLOYMENT_URL}/wsfev1/FEParamGetActividades"
 
     data = {
         "Auth": {

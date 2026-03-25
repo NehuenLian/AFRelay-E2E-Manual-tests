@@ -10,7 +10,7 @@ TOKEN = os.getenv("TOKEN")
 
 def fe_param_get_tipos_doc():
 
-    url = f"{DEPLOYMENT_URL}/wsfe/FEParamGetTiposDoc"
+    url = f"{DEPLOYMENT_URL}/wsfev1/FEParamGetTiposDoc"
 
     data = {
         "Auth": {

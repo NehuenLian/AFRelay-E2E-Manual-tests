@@ -12,7 +12,7 @@ TOKEN = os.getenv("TOKEN")
 
 def fecae_reg_informativo():
 
-    url = f"{DEPLOYMENT_URL}/wsfe/FECAEARegInformativo"
+    url = f"{DEPLOYMENT_URL}/wsfev1/FECAEARegInformativo"
 
     payload = {
         "Auth": {
@@ -22,14 +22,14 @@ def fecae_reg_informativo():
             "FeCabReq": {
                 "CantReg": 1,
                 "PtoVta": 1,
-                "CbteTipo": 1
+                "CbteTipo": 1 # Factura A
             },
             "FeDetReq": {
                 "FECAEADetRequest": [
                     {
                         "Concepto": 1,
-                        "DocTipo": 99,
-                        "DocNro": 20123456789,
+                        "DocTipo": 96, # DNI (Inconsistente para Factura A)
+                        "DocNro": 20123456, # Un DNI genérico
                         "CbteDesde": 1,
                         "CbteHasta": 1,
                         "CbteFch": get_date_today(),
@@ -41,8 +41,8 @@ def fecae_reg_informativo():
                         "ImpTrib": 0.00,
                         "MonId": "PES",
                         "MonCotiz": 1.00,
-                        "CondicionIVAReceptorId": 1,
-                        "CAEA": "00000000000000",
+                        "CondicionIVAReceptorId": 5, # Consumidor Final
+                        "CAEA": "86090012937910", # Asegúrate de que este CAEA sea uno vigente en homologación
                     }
                 ]
             }

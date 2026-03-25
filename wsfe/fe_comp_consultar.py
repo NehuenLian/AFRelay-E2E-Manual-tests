@@ -10,7 +10,7 @@ TOKEN = os.getenv("TOKEN")
 
 def fe_comp_consultar():
 
-    url = f"{DEPLOYMENT_URL}/wsfe/FECompConsultar"
+    url = f"{DEPLOYMENT_URL}/wsfev1/FECompConsultar"
 
     data = {
         "Auth": {
